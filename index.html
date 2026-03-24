@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lagos In Yankee 3.0 – The Summer Pop-Up. Culture, Fashion, Food & Community. May 30, 2026 · Maryland." />
+  <title>Lagos In Yankee &rsquo;26 &mdash; Summer Pop-Up 3.0</title>
+  <link rel="icon" type="image/jpeg" href="lagos in yankee.jpeg" />
+  <link rel="apple-touch-icon" href="lagos in yankee.jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- =====================================================
+       NAV
+  ===================================================== -->
+  <header class="nav" id="mainNav" role="banner">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#hero" aria-label="Lagos In Yankee home">
+        <img src="lagos in yankee.jpeg" alt="Lagos In Yankee Logo" class="nav-logo-img" />
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#highlight-video">Video</a>
+        <a href="#experience">Experience</a>
+        <a href="#vendors">Vendors</a>
+        <a href="#details">Details</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="nav-btn nav-btn-outline" href="#vendor-cta">Become a Vendor</a>
+        <a class="nav-btn nav-btn-fill" href="#tickets">Attend Free</a>
+      </div>
+      <button class="nav-hamburger" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="nav-mobile" id="navMobile" aria-hidden="true">
+      <a href="#about"            class="nav-mobile-link">About</a>
+      <a href="#highlight-video"  class="nav-mobile-link">Video</a>
+      <a href="#experience"       class="nav-mobile-link">Experience</a>
+      <a href="#vendors"          class="nav-mobile-link">Vendors</a>
+      <a href="#details"          class="nav-mobile-link">Details</a>
+      <a href="#gallery"          class="nav-mobile-link">Gallery</a>
+      <a href="#faq"              class="nav-mobile-link">FAQ</a>
+      <a href="#tickets"          class="nav-mobile-link nav-mobile-cta">Attend Free</a>
+      <a href="#vendor-cta"       class="nav-mobile-link nav-mobile-vendor">Become a Vendor</a>
+    </div>
+  </header>
+
+
+  <!-- =====================================================
+       HERO
+  ===================================================== -->
+  <section class="hero" id="hero" aria-label="Hero – Lagos In Yankee 2026">
+
+    <!-- Video / poster background -->
+    <div class="hero-media" aria-hidden="true">
+      <video
+        class="hero-video"
+        autoplay muted loop playsinline
+        poster="LIYgraphicDesign.jpeg"
+      >
+        <source src="thirdmainland.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-scrim"></div>
+      <div class="hero-grain"></div>
+    </div>
+
+    <!-- Countdown ribbon -->
+    <div class="hero-ribbon" aria-label="Event countdown">
+      <span class="ribbon-label">Event starts in</span>
+      <div class="hero-timer" id="heroTimer" aria-live="polite">
+        <div class="timer-unit"><span id="cd-days">00</span><em>Days</em></div>
+        <span class="timer-colon" aria-hidden="true">:</span>
+        <div class="timer-unit"><span id="cd-hours">00</span><em>Hrs</em></div>
+        <span class="timer-colon" aria-hidden="true">:</span>
+        <div class="timer-unit"><span id="cd-mins">00</span><em>Min</em></div>
+        <span class="timer-colon" aria-hidden="true">:</span>
+        <div class="timer-unit"><span id="cd-secs">00</span><em>Sec</em></div>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="hero-body">
+      <div class="hero-edition" aria-label="Edition">3.0 Edition</div>
+
+      <h1 class="hero-headline">
+        Lagos<br>
+        <em>In Yankee</em><br>
+        <span class="hero-year">&rsquo;26</span>
+      </h1>
+
+      <p class="hero-tagline">Culture &ensp;&middot;&ensp; Fashion &ensp;&middot;&ensp; Food &ensp;&middot;&ensp; Community</p>
+
+      <div class="hero-meta-row" aria-label="Date and location">
+        <div class="hero-meta-item">
+          <!-- Calendar icon -->
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+            <rect x="2" y="3" width="16" height="16" rx="2"/>
+            <line x1="14" y1="1" x2="14" y2="5"/>
+            <line x1="6"  y1="1" x2="6"  y2="5"/>
+            <line x1="2" y1="8" x2="18" y2="8"/>
+          </svg>
+          May 30, 2026
+        </div>
+        <div class="hero-meta-dot" aria-hidden="true"></div>
+        <div class="hero-meta-item">
+          <!-- Pin icon -->
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+            <path d="M10 2a6 6 0 0 1 6 6c0 4.5-6 10-6 10S4 12.5 4 8a6 6 0 0 1 6-6z"/>
+            <circle cx="10" cy="8" r="2"/>
+          </svg>
+          Maryland, USA
+        </div>
+      </div>
+
+      <div class="hero-ctas">
+        <a class="btn btn-gold" href="#tickets">
+          Attend Free
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <line x1="3" y1="8" x2="13" y2="8"/>
+            <polyline points="9,4 13,8 9,12"/>
+          </svg>
+        </a>
+        <a class="btn btn-outline-cream" href="#vendor-cta">
+          Become a Vendor
+        </a>
+      </div>
+    </div>
+
+    <!-- Scroll hint -->
+    <a class="hero-scroll" href="#about" aria-label="Scroll to about section">
+      <svg viewBox="0 0 24 36" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+        <rect x="1" y="1" width="22" height="34" rx="11"/>
+        <line x1="12" y1="8" x2="12" y2="16" class="scroll-dot"/>
+      </svg>
+      <span>Scroll</span>
+    </a>
+
+  </section><!-- /hero -->
+
+
+  <!-- =====================================================
+       ABOUT
+  ===================================================== -->
+  <section class="about" id="about" aria-labelledby="about-heading">
+    <div class="about-inner">
+
+      <div class="about-media fade-up">
+        <img src="LIYgraphicDesign.jpeg" alt="Lagos In Yankee Graphic Design" class="about-media-img" loading="lazy" />
+        <div class="about-badge" aria-hidden="true">Est. 2023</div>
+      </div>
+
+      <div class="about-text fade-up">
+        <p class="section-label">About the Event</p>
+        <h2 id="about-heading" class="section-heading">
+          Where Lagos<br><em>Meets the Diaspora</em>
+        </h2>
+        <p class="body-lg">Lagos In Yankee is a pop-up event proudly hosted by Slimfit Concepts LLC.</p>
+        <p class="body-lg">
+          Lagos In Yankee was born from a simple truth &mdash; culture does not stay behind when you travel. It travels with you, grows with you, and finds new roots wherever you land.
+        </p>
+        <p class="body-md">
+          Now in its third edition, LIY is Maryland&rsquo;s premier Afro-cultural pop-up experience. We bring together vendors, creatives, food makers and community builders to create something that feels less like an event &mdash; and more like a homecoming.
+        </p>
+        <p class="body-md">
+          Whether you came from Lagos last year or have never set foot on the continent, this is your space. Come hungry, come curious, come ready to connect.
+        </p>
+        <div class="about-stats" aria-label="Past edition numbers">
+          <div class="stat-item">
+            <span class="stat-num">2<sup>+</sup></span>
+            <span class="stat-label">Editions delivered</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-item">
+            <span class="stat-num">60<sup>+</sup></span>
+            <span class="stat-label">Vendors hosted</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-item">
+            <span class="stat-num">1K<sup>+</sup></span>
+            <span class="stat-label">Community members</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       HIGHLIGHT VIDEO
+  ===================================================== -->
+  <section class="highlight-video" id="highlight-video" aria-label="LIY highlight reel">
+
+    <!-- Looping background video -->
+    <div class="highlight-video-media" aria-hidden="true">
+      <video autoplay muted loop playsinline preload="none">
+        <source src="liyviddddd.mp4" type="video/mp4" />
+        <track kind="descriptions" src="" label="Visual description" default />
+      </video>
+      <div class="highlight-video-scrim"></div>
+    </div>
+
+    <!-- Overlaid text -->
+    <div class="highlight-video-content">
+      <div class="highlight-video-body">
+        <p class="section-label">LIY In Motion</p>
+        <h2 class="section-heading section-heading-light">
+          See What<br><em>We&rsquo;re About</em>
+        </h2>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       WHAT TO EXPECT
+  ===================================================== -->
+  <section class="experience" id="experience" aria-labelledby="exp-heading">
+    <div class="container">
+      <div class="section-header fade-up">
+        <p class="section-label">The Experience</p>
+        <h2 id="exp-heading" class="section-heading">
+          What to Expect<br><em>This Summer</em>
+        </h2>
+      </div>
+
+      <div class="exp-grid">
+
+        <article class="exp-card fade-up" aria-label="Vendors" data-num="01">
+          <svg class="exp-corner exp-corner--tr" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44">
+            <line x1="43" y1="1"  x2="12" y2="1"  stroke="#F5C518" stroke-width="1.5" stroke-linecap="square" opacity="0.6"/>
+            <line x1="43" y1="1"  x2="43" y2="32" stroke="#F5C518" stroke-width="1.5" stroke-linecap="square" opacity="0.6"/>
+            <line x1="37" y1="7"  x2="18" y2="7"  stroke="#C9A200" stroke-width="1"   stroke-linecap="square" opacity="0.4"/>
+            <line x1="37" y1="7"  x2="37" y2="26" stroke="#C9A200" stroke-width="1"   stroke-linecap="square" opacity="0.4"/>
+            <circle cx="43" cy="1" r="2.5" fill="#F5C518" opacity="0.75"/>
+          </svg>
+          <div class="exp-icon-wrap">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 12l1.5-8h21L28 12"/>
+              <path d="M4 12a4 4 0 0 0 4 4h16a4 4 0 0 0 4-4"/>
+              <path d="M11 12v12M21 12v12"/>
+              <line x1="4" y1="28" x2="28" y2="28"/>
+              <line x1="4" y1="22" x2="11" y2="22"/>
+              <line x1="21" y1="22" x2="28" y2="22"/>
+            </svg>
+          </div>
+          <h3 class="exp-title">Fashion &amp; Lifestyle Vendors</h3>
+          <p class="exp-desc">Discover curated brands in fashion, beauty, art and lifestyle. Support Black-owned and diaspora businesses bringing their best work to one space.</p>
+        </article>
+
+        <article class="exp-card fade-up" aria-label="Food" data-num="02">
+          <svg class="exp-corner exp-corner--tr" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44">
+            <line x1="43" y1="1"  x2="12" y2="1"  stroke="#F5C518" stroke-width="1.5" stroke-linecap="square" opacity="0.6"/>
+            <line x1="43" y1="1"  x2="43" y2="32" stroke="#F5C518" stroke-width="1.5" stroke-linecap="square" opacity="0.6"/>
+            <line x1="37" y1="7"  x2="18" y2="7"  stroke="#C9A200" stroke-width="1"   stroke-linecap="square" opacity="0.4"/>
+            <line x1="37" y1="7"  x2="37" y2="26" stroke="#C9A200" stroke-width="1"   stroke-linecap="square" opacity="0.4"/>
+            <circle cx="43" cy="1" r="2.5" fill="#F5C518" opacity="0.75"/>
+          </svg>
+          <div class="exp-icon-wrap">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M8 4v10a6 6 0 0 0 12 0V4"/>
+              <line x1="14" y1="4" x2="14" y2="20"/>
+              <line x1="14" y1="20" x2="14" y2="28"/>
+              <line x1="10" y1="28" x2="18" y2="28"/>
+              <line x1="8" y1="4" x2="20" y2="4"/>
+            </svg>
+          </div>
+          <h3 class="exp-title">African Food &amp; Drinks</h3>
+          <p class="exp-desc">Jollof, suya, puff-puff, fresh juice and more. The food court brings authentic West African flavours and the energy of a Lagos mama&rsquo;s kitchen.</p>
+        </article>
+
+        <article class="exp-card fade-up" aria-label="Music" data-num="03">
+          <div class="exp-icon-wrap">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M9 28V12l18-4v16"/>
+              <circle cx="7" cy="28" r="3"/>
+              <circle cx="25" cy="24" r="3"/>
+              <line x1="9" y1="18" x2="27" y2="14"/>
+            </svg>
+          </div>
+          <h3 class="exp-title">Music &amp; Live DJ</h3>
+          <p class="exp-desc">Afrobeats, Amapiano, highlife and Afro-house &mdash; the soundtrack runs all day. Live performances and DJ sets that keep the energy at its peak.</p>
+        </article>
+
+        <article class="exp-card fade-up" aria-label="Photo moments" data-num="04">
+          <div class="exp-icon-wrap">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 10a2 2 0 0 1 2-2h2l2-3h8l2 3h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V10z"/>
+              <circle cx="16" cy="17" r="4"/>
+              <circle cx="25" cy="12" r="1" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 class="exp-title">Content &amp; Photo Moments</h3>
+          <p class="exp-desc">Curated installations, backdrops and creative setups designed for content creators. Leave with content worth posting, not just memories.</p>
+        </article>
+
+        <article class="exp-card fade-up" aria-label="Networking" data-num="05">
+          <svg class="exp-corner exp-corner--bl" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44">
+            <line x1="1"  y1="43" x2="32" y2="43" stroke="#F5C518" stroke-width="1.5" stroke-linecap="square" opacity="0.6"/>
+            <line x1="1"  y1="43" x2="1"  y2="12" stroke="#F5C518" stroke-width="1.5" stroke-linecap="square" opacity="0.6"/>
+            <line x1="7"  y1="37" x2="26" y2="37" stroke="#C9A200" stroke-width="1"   stroke-linecap="square" opacity="0.4"/>
+            <line x1="7"  y1="37" x2="7"  y2="18" stroke="#C9A200" stroke-width="1"   stroke-linecap="square" opacity="0.4"/>
+            <circle cx="1" cy="43" r="2.5" fill="#F5C518" opacity="0.75"/>
+          </svg>
+          <div class="exp-icon-wrap">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="16" cy="8" r="4"/>
+              <path d="M6 28v-2a6 6 0 0 1 6-6h8a6 6 0 0 1 6 6v2"/>
+              <circle cx="6"  cy="14" r="3"/>
+              <circle cx="26" cy="14" r="3"/>
+              <path d="M2 26v-1a4 4 0 0 1 4-4"/>
+              <path d="M30 26v-1a4 4 0 0 0-4-4"/>
+            </svg>
+          </div>
+          <h3 class="exp-title">Networking &amp; Community</h3>
+          <p class="exp-desc">Build real connections with founders, creatives and professionals from the diaspora. Lagos In Yankee is where business cards actually get exchanged.</p>
+        </article>
+
+        <article class="exp-card exp-card-featured fade-up" aria-label="Culture" data-num="06">
+          <svg class="exp-corner exp-corner--bl" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44">
+            <line x1="1"  y1="43" x2="32" y2="43" stroke="#F5C518" stroke-width="1.5" stroke-linecap="square" opacity="0.6"/>
+            <line x1="1"  y1="43" x2="1"  y2="12" stroke="#F5C518" stroke-width="1.5" stroke-linecap="square" opacity="0.6"/>
+            <line x1="7"  y1="37" x2="26" y2="37" stroke="#C9A200" stroke-width="1"   stroke-linecap="square" opacity="0.4"/>
+            <line x1="7"  y1="37" x2="7"  y2="18" stroke="#C9A200" stroke-width="1"   stroke-linecap="square" opacity="0.4"/>
+            <circle cx="1" cy="43" r="2.5" fill="#F5C518" opacity="0.75"/>
+          </svg>
+          <div class="exp-icon-wrap">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polygon points="16,3 20,13 30,13 22,20 25,30 16,24 7,30 10,20 2,13 12,13"/>
+            </svg>
+          </div>
+          <h3 class="exp-title">Cultural Celebration</h3>
+          <p class="exp-desc">Fashion showcases, storytelling, and cultural programming that honours where we come from &mdash; while celebrating where we are building.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       FEATURED VENDORS
+  ===================================================== -->
+  <section class="vendors" id="vendors" aria-labelledby="vendors-heading">
+    <div class="container">
+      <div class="section-header fade-up">
+        <p class="section-label">Featured Vendors</p>
+        <h2 id="vendors-heading" class="section-heading">
+          Brands You Will<br><em>Meet at LIY &rsquo;26</em>
+        </h2>
+      </div>
+
+      <div class="vendors-grid">
+
+        <article class="vendor-card fade-up">
+          <div class="vendor-img">
+            <img src="asooke.avif" alt="Àṣọ Studio – African fashion vendor" loading="lazy" />
+          </div> 
+          <div class="vendor-info">
+            <span class="vendor-category">Fashion</span>
+            <h3 class="vendor-name">Àṣọ Studio</h3>
+            <p class="vendor-desc">Contemporary African fashion blending ankara with modern silhouettes. Ready-to-wear and custom pieces available.</p>
+          </div>
+        </article>
+
+        <article class="vendor-card fade-up">
+          <div class="vendor-img">
+            <img src="blacksoap.avif" alt="Oge Skin – natural African skincare" loading="lazy" />
+          </div>
+          <div class="vendor-info">
+            <span class="vendor-category">Beauty</span>
+            <h3 class="vendor-name">Oge Skin</h3>
+            <p class="vendor-desc">Natural skincare rooted in African botanicals. Shea, black soap and oils formulated for melanin-rich skin.</p>
+          </div>
+        </article>
+
+        <article class="vendor-card fade-up">
+          <div class="vendor-img">
+            <img src="nigeriankitchen.avif" alt="Mama's Kitchen Pop – Nigerian food vendor" loading="lazy" />
+          </div>
+          <div class="vendor-info">
+            <span class="vendor-category">Food &amp; Drink</span>
+            <h3 class="vendor-name">Mama&rsquo;s Kitchen Pop</h3>
+            <p class="vendor-desc">Authentic Nigerian home cooking. Jollof, egusi, pepper soup &mdash; prepared to the standard your mother set.</p>
+          </div>
+        </article>
+
+        <article class="vendor-card fade-up">
+          <div class="vendor-img">
+            <img src="newspaper.avif" alt="Naija Prints Co. – Afrocentric art and lifestyle" loading="lazy" />
+          </div>
+          <div class="vendor-info">
+            <span class="vendor-category">Art &amp; Lifestyle</span>
+            <h3 class="vendor-name">Naija Prints Co.</h3>
+            <p class="vendor-desc">Bold Afrocentric wall art, prints and lifestyle goods celebrating Nigerian identity and Black excellence.</p>
+          </div>
+        </article>
+
+        <article class="vendor-card fade-up">
+          <div class="vendor-img">
+            <img src="nigerianjewelry.avif" alt="Ẹwa Jewels – handcrafted Yoruba-inspired jewellery" loading="lazy" />
+          </div>
+          <div class="vendor-info">
+            <span class="vendor-category">Accessories</span>
+            <h3 class="vendor-name">Ẹwa Jewels</h3>
+            <p class="vendor-desc">Handcrafted gold-tone jewellery inspired by Yoruba tradition. Earrings, cuffs and statement pieces.</p>
+          </div>
+        </article>
+
+        <article class="vendor-card fade-up">
+          <div class="vendor-img">
+            <img src="zoboooo.avif" alt="Zobo & Co. – hibiscus drinks and zobo cocktails" loading="lazy" />
+          </div>
+          <div class="vendor-info">
+            <span class="vendor-category">Beverages</span>
+            <h3 class="vendor-name">Zobo &amp; Co.</h3>
+            <p class="vendor-desc">Premium hibiscus-based drinks, zobo cocktails and natural fruit infusions made fresh on site.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="vendors-cta fade-up">
+        <p>More vendors to be announced. Want your brand at LIY &rsquo;26?</p>
+        <a class="btn btn-gold-dark" href="#vendor-cta">Apply as a Vendor</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       EVENT DETAILS
+  ===================================================== -->
+  <section class="details" id="details" aria-labelledby="details-heading">
+    <div class="container">
+      <div class="details-inner">
+
+        <div class="details-text fade-up">
+          <p class="section-label">The Essentials</p>
+          <h2 id="details-heading" class="section-heading">
+            Event<br><em>Details</em>
+          </h2>
+          <p class="body-md" style="color: #555;">
+            Everything you need to plan your visit. More details &mdash; including full programme schedule and parking &mdash; will be released closer to the date.
+          </p>
+          <a class="btn btn-gold" href="#tickets" style="margin-top: 32px; display: inline-flex;">
+            Attend Free
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <line x1="3" y1="8" x2="13" y2="8"/>
+              <polyline points="9,4 13,8 9,12"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="details-cards fade-up">
+
+          <div class="detail-card">
+            <div class="detail-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+                <rect x="2" y="3" width="20" height="20" rx="2"/>
+                <line x1="16" y1="1" x2="16" y2="6"/>
+                <line x1="8"  y1="1" x2="8"  y2="6"/>
+                <line x1="2" y1="10" x2="22" y2="10"/>
+              </svg>
+            </div>
+            <div>
+              <span class="detail-label">Date</span>
+              <strong class="detail-value">Saturday, May 30, 2026</strong>
+            </div>
+          </div>
+
+          <div class="detail-card">
+            <div class="detail-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <div>
+              <span class="detail-label">Time</span>
+              <strong class="detail-value">10:00 AM &ndash; 6:00 PM</strong>
+            </div>
+          </div>
+
+          <div class="detail-card">
+            <div class="detail-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+                <path d="M12 2a7 7 0 0 1 7 7c0 5.25-7 13-7 13S5 14.25 5 9a7 7 0 0 1 7-7z"/>
+                <circle cx="12" cy="9" r="2.5"/>
+              </svg>
+            </div>
+            <div>
+              <span class="detail-label">Location</span>
+              <strong class="detail-value">8701 Winnads Road, Randallstown, MD2113 (Parking Lots), USA</strong>
+              <span class="detail-sub">Maryland, USA</span>
+            </div>
+          </div>
+
+          <div class="detail-card">
+            <div class="detail-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+                <rect x="1" y="3" width="22" height="18" rx="2"/>
+                <polyline points="1 9 12 15 23 9"/>
+              </svg>
+            </div>
+            <div>
+              <span class="detail-label">Parking</span>
+              <strong class="detail-value">On-site parking available</strong>
+              <span class="detail-sub">Parking details shared with venue address</span>
+            </div>
+          </div>
+
+          <div class="detail-card">
+            <div class="detail-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+                <path d="M20 12V22H4V12"/>
+                <path d="M22 7H2v5h20V7z"/>
+                <path d="M12 22V7"/>
+                <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/>
+                <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/>
+              </svg>
+            </div>
+            <div>
+              <span class="detail-label">Admission</span>
+              <strong class="detail-value">Free &mdash; All Welcome</strong>
+              <span class="detail-sub">No ticket required. Just show up</span>
+            </div>
+          </div>
+
+          <div class="detail-card">
+            <div class="detail-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <div>
+              <span class="detail-label">Age</span>
+              <strong class="detail-value">All ages welcome</strong>
+              <span class="detail-sub">Family-friendly environment</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       GALLERY
+  ===================================================== -->
+  <section class="gallery" id="gallery" aria-labelledby="gallery-heading">
+
+    <div class="container">
+      <div class="section-header fade-up">
+        <p class="section-label">Past Editions</p>
+        <h2 id="gallery-heading" class="section-heading">
+          The Vibes<br><em>Speak for Themselves</em>
+        </h2>
+        <p class="body-md" style="max-width: 500px; margin-top: 12px;">
+          This is what LIY looks like in real life. Come and add your moment to the story.
+        </p>
+      </div>
+    </div>
+
+    <!-- Slider -->
+    <div class="gallery-slider-outer" aria-label="Photo gallery from past events">
+
+      <!-- Stage: track + arrows -->
+      <div class="gallery-stage">
+        <div class="gallery-track" id="galleryTrack">
+
+          <!-- Slide 1 -->
+          <div class="gallery-slide" aria-roledescription="slide" aria-label="Slide 1 of 13">
+            <div class="gallery-slide-img">
+              <img src="LIYIMAGES (1).jpg" alt="LIY gallery 1" loading="lazy" />
+            </div>
+            <div class="gallery-slide-caption"><span class="slide-brand">LIY &rsquo;25</span></div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="gallery-slide" aria-roledescription="slide" aria-label="Slide 2 of 13">
+            <div class="gallery-slide-img">
+              <img src="LIYIMAGES (2).jpg" alt="LIY gallery 2" loading="lazy" />
+            </div>
+            <div class="gallery-slide-caption">
+              <span class="slide-brand">LIY &rsquo;25</span>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="gallery-slide" aria-roledescription="slide" aria-label="Slide 3 of 13">
+            <div class="gallery-slide-img">
+              <img src="LIYIMAGES (3).jpg" alt="LIY gallery 3" loading="lazy" />
+            </div>
+            <div class="gallery-slide-caption"><span class="slide-brand">LIY &rsquo;25</span></div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="gallery-slide" aria-roledescription="slide" aria-label="Slide 4 of 13">
+            <div class="gallery-slide-img">
+              <img src="LIYIMAGES (4).jpg" alt="LIY gallery 4" loading="lazy" />
+            </div>
+            <div class="gallery-slide-caption">
+              <span class="slide-brand">LIY &rsquo;25</span>
+            </div>
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="gallery-slide" aria-roledescription="slide" aria-label="Slide 5 of 13">
+            <div class="gallery-slide-img">
+              <img src="LIYIMAGES (5).jpg" alt="LIY gallery 5" loading="lazy" />
+            </div>
+            <div class="gallery-slide-caption">
+              <span class="slide-brand">LIY &rsquo;25</span>
+            </div>
+          </div>
+
+          <!-- Slide 6 -->
+          <div class="gallery-slide" aria-roledescription="slide" aria-label="Slide 6 of 13">
+            <div class="gallery-slide-img">
+              <img src="LIYIMAGES (6).jpg" alt="LIY gallery 6" loading="lazy" />
+            </div>
+            <div class="gallery-slide-caption">
+              <span class="slide-brand">LIY &rsquo;25</span>
+            </div>
+          </div>
+
+          <!-- Slide 7 -->
+          <div class="gallery-slide" aria-roledescription="slide" aria-label="Slide 7 of 13">
+            <div class="gallery-slide-img">
+              <img src="LIYIMAGES (7).jpg" alt="LIY gallery 7" loading="lazy" />
+            </div>
+            <div class="gallery-slide-caption">
+              <span class="slide-brand">LIY &rsquo;25</span>
+            </div>
+          </div>
+
+          <!-- Slide 8 -->
+          <div class="gallery-slide" aria-roledescription="slide" aria-label="Slide 8 of 13">
+            <div class="gallery-slide-img">
+              <img src="LIYIMAGES (4).jpg" alt="LIY gallery 8" loading="lazy" />
+            </div>
+            <div class="gallery-slide-caption">
+              <span class="slide-brand">LIY &rsquo;25</span>
+            </div>
+          </div>
+
+          <!-- Slide 9 -->
+          <div class="gallery-slide" aria-roledescription="slide" aria-label="Slide 9 of 13">
+            <div class="gallery-slide-img">
+              <img src="LIYIMAGES (9).jpg" alt="LIY gallery 9" loading="lazy" />
+            </div>
+            <div class="gallery-slide-caption">
+              <span class="slide-brand">LIY &rsquo;25</span>
+            </div>
+          </div>
+
+          <!-- Slide 10 -->
+          <div class="gallery-slide" aria-roledescription="slide" aria-label="Slide 10 of 13">
+            <div class="gallery-slide-img">
+              <img src="LIYIMAGES (3).jpg" alt="LIY gallery 10" loading="lazy" />
+            </div>
+            <div class="gallery-slide-caption">
+              <span class="slide-brand">LIY &rsquo;25</span>
+            </div>
+          </div>
+
+          <!-- Slide 11 -->
+          <div class="gallery-slide" aria-roledescription="slide" aria-label="Slide 11 of 13">
+            <div class="gallery-slide-img">
+              <img src="LIYIMAGES (12).jpg" alt="LIY gallery 11" loading="lazy" />
+            </div>
+            <div class="gallery-slide-caption">
+              <span class="slide-brand">LIY &rsquo;25</span>
+            </div>
+          </div>
+
+          <!-- Slide 12 -->
+          <div class="gallery-slide" aria-roledescription="slide" aria-label="Slide 12 of 13">
+            <div class="gallery-slide-img">
+              <img src="LIYIMAGES (12).jpg" alt="LIY gallery 12" loading="lazy" />
+            </div>
+            <div class="gallery-slide-caption">
+              <span class="slide-brand">LIY &rsquo;25</span>
+            </div>
+          </div>
+
+          <!-- Slide 13 -->
+          <div class="gallery-slide" aria-roledescription="slide" aria-label="Slide 13 of 13">
+            <div class="gallery-slide-img">
+              <img src="LIYIMAGES (1).jpg" alt="LIY gallery 13" loading="lazy" />
+            </div>
+            <div class="gallery-slide-caption">
+              <span class="slide-brand">LIY &rsquo;25</span>
+            </div>
+          </div>
+
+        </div><!-- /gallery-track -->
+
+      </div><!-- /gallery-stage -->
+
+      <!-- Dots + counter bar with arrows flanking -->
+      <div class="gallery-controls-bar">
+        <button class="gallery-arrow gallery-arrow--prev" id="galleryPrev" aria-label="Previous photo">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="13 4 7 10 13 16"/>
+          </svg>
+        </button>
+        <div class="gallery-dots" id="galleryDots" role="tablist" aria-label="Go to slide"></div>
+        <button class="gallery-arrow gallery-arrow--next" id="galleryNext" aria-label="Next photo">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="7 4 13 10 7 16"/>
+          </svg>
+        </button>
+        <div class="gallery-counter" aria-live="polite" aria-atomic="true">
+          <span id="galleryCurrent">01</span>
+          <span class="counter-sep">/</span>
+          <span id="galleryTotal">13</span>
+        </div>
+      </div>
+
+    </div><!-- /gallery-slider-outer -->
+
+    <div class="container">
+      <p class="gallery-follow fade-up">
+        See more &mdash;
+        <a href="https://instagram.com/lagosinyankeeevent" target="_blank" rel="noopener" aria-label="Follow Lagos In Yankee on Instagram">
+          &#64;lagosinyankeeevent
+          <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" style="width:12px;height:12px;display:inline-block;vertical-align:middle;margin-left:4px;">
+            <path d="M2 12L12 2M12 2H5M12 2v7"/>
+          </svg>
+        </a>
+      </p>
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       VENDOR SIGN-UP CTA
+  ===================================================== -->
+  <section class="vendor-cta" id="vendor-cta" aria-labelledby="vcta-heading">
+    <div class="vcta-inner">
+      <div class="vcta-media" aria-hidden="true">
+       <img src="image (5).jpg" alt="vendor space at Lagos In Yankee" class="vcta-img fade-up" />
+      </div>
+      <div class="vcta-content fade-up">
+        <p class="section-label section-label-light">For Vendors</p>
+        <h2 id="vcta-heading" class="section-heading section-heading-light">
+          Showcase Your Brand<br><em>to Hundreds of Buyers</em>
+        </h2>
+        <p class="body-md" style="color: var(--cream-70);">
+          Lagos In Yankee puts your brand in front of a highly engaged, culturally connected audience. Whether you are a fashion label, beauty brand, food business or creative &mdash; there is a space for you at LIY &rsquo;26.
+        </p>
+        <ul class="vcta-list">
+          <li>
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="2 8 6 12 14 4"/></svg>
+            Stall spaces &mdash; standard and premium sizes
+          </li>
+          <li>
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="2 8 6 12 14 4"/></svg>
+            Inclusion in event social media promotion
+          </li>
+          <li>
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="2 8 6 12 14 4"/></svg>
+            Access to 1,000+ event attendees in one day
+          </li>
+          <li>
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="2 8 6 12 14 4"/></svg>
+            Vendor lounge and on-site support
+          </li>
+        </ul>
+        <a class="btn btn-gold" href="https://docs.google.com/forms/d/e/1FAIpQLScn3Z1qtXckrFWw8l2pbjkDUsWVWUA2yz65vP6trKX1QMxoCw/viewform?usp=send_form" target="_blank" rel="noopener noreferrer" style="margin-top: 12px;">
+          Apply as a Vendor
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <line x1="3" y1="8" x2="13" y2="8"/>
+            <polyline points="9,4 13,8 9,12"/>
+          </svg>
+        </a>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       TICKETS
+  ===================================================== -->
+  <section class="tickets" id="tickets" aria-labelledby="tickets-heading">
+    <div class="container">
+      <div class="section-header fade-up">
+        <p class="section-label">Free Entry</p>
+        <h2 id="tickets-heading" class="section-heading">
+          Show Up.<br><em>No Charge.</em>
+        </h2>
+        <p class="body-md" style="color:var(--brown-warm); max-width:540px; margin:0 auto;">
+          Lagos In Yankee &rsquo;26 is free for all attendees. Just come through, eat, shop, vibe and celebrate with your community.
+        </p>
+      </div>
+
+      <div class="tickets-free-card fade-up">
+        <div class="free-card-inner">
+          <div class="free-card-badge">FREE</div>
+          <h3 class="free-card-title">General Admission</h3>
+          <ul class="ticket-perks">
+            <li>
+              <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="2 7 5 10 12 3"/></svg>
+              Free entry for all attendees
+            </li>
+            <li>
+              <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="2 7 5 10 12 3"/></svg>
+              Access to all vendor stalls
+            </li>
+            <li>
+              <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="2 7 5 10 12 3"/></svg>
+              Food court &amp; drinks
+            </li>
+            <li>
+              <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="2 7 5 10 12 3"/></svg>
+              Live music, Afrobeats &amp; DJ sets
+            </li>
+            <li>
+              <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="2 7 5 10 12 3"/></svg>
+              Cultural activations &amp; pop-ups
+            </li>
+          </ul>
+          <p class="free-card-note">May 30, 2026 &mdash; Maryland &mdash; Doors open 10am</p>
+          <a class="btn btn-gold ticket-btn" href="#contact">
+            Mark Your Calendar
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <line x1="3" y1="8" x2="13" y2="8"/><polyline points="9,4 13,8 9,12"/>
+            </svg>
+          </a>
+        </div>
+        <div class="free-card-aside">
+          <div class="free-card-badge free-card-badge--vendor">VENDOR</div>
+          <h3 class="free-card-title">Sell Your Brand Here</h3>
+          <ul class="ticket-perks ticket-perks--vendor">
+            <li>
+              <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="2 7 5 10 12 3"/></svg>
+              Direct access to 1,000+ culturally engaged buyers
+            </li>
+            <li>
+              <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="2 7 5 10 12 3"/></svg>
+              Featured on LIY social media before &amp; after the event
+            </li>
+            <li>
+              <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="2 7 5 10 12 3"/></svg>
+              Standard and premium stall sizes available
+            </li>
+            <li>
+              <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="2 7 5 10 12 3"/></svg>
+              Vendor lounge &amp; on-site event support
+            </li>
+            <li>
+              <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="2 7 5 10 12 3"/></svg>
+              Network with fellow Black-owned businesses
+            </li>
+          </ul>
+          <a class="btn btn-gold ticket-btn" href="https://docs.google.com/forms/d/e/1FAIpQLScn3Z1qtXckrFWw8l2pbjkDUsWVWUA2yz65vP6trKX1QMxoCw/viewform?usp=send_form" target="_blank" rel="noopener noreferrer">
+            Apply as a Vendor
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <line x1="3" y1="8" x2="13" y2="8"/><polyline points="9,4 13,8 9,12"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      </div>
+
+      <p class="tickets-note fade-up">
+        Entry is completely free &mdash; just show up and enjoy. Vendor spaces are limited, so apply early.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       FAQ
+  ===================================================== -->
+  <section class="faq" id="faq" aria-labelledby="faq-heading">
+    <div class="container">
+      <div class="section-header fade-up">
+        <p class="section-label">Got Questions?</p>
+        <h2 id="faq-heading" class="section-heading">
+          Frequently<br><em>Asked</em>
+        </h2>
+      </div>
+
+      <div class="faq-list" role="list">
+
+        <div class="faq-item fade-up" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq1">
+            Is this event family-friendly?
+            <svg class="faq-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <polyline points="5 8 10 13 15 8"/>
+            </svg>
+          </button>
+          <div class="faq-answer" id="faq1" aria-hidden="true">
+            <p>Yes &mdash; Lagos In Yankee is a fully family-friendly event. Children are welcome and there will be activities and food options suited to all ages.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-up" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq2">
+            Where exactly is the venue?
+            <svg class="faq-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <polyline points="5 8 10 13 15 8"/>
+            </svg>
+          </button>
+          <div class="faq-answer" id="faq2" aria-hidden="true">
+            <p>The event is in Maryland, USA. The full venue address will be shared closer to the date via our Instagram and mailing list. Follow &#64;lagosinyankeeevent to stay in the loop.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-up" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq3">
+            Can I sell food or drinks as a vendor?
+            <svg class="faq-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <polyline points="5 8 10 13 15 8"/>
+            </svg>
+          </button>
+          <div class="faq-answer" id="faq3" aria-hidden="true">
+            <p>Yes, food and drink vendors are welcome. You will need to provide proof of any relevant food handling certifications required by the state of Maryland. These details are confirmed during the vendor application process.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-up" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq4">
+            Can I get a vendor refund if I can no longer attend?
+            <svg class="faq-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <polyline points="5 8 10 13 15 8"/>
+            </svg>
+          </button>
+          <div class="faq-answer" id="faq4" aria-hidden="true">
+            <p>Entry to LIY &rsquo;26 is completely free, so there are no tickets to refund. If you have paid for a vendor space and can no longer attend, please contact us at enquiries.enquiries.lagosinyankee@gmail.com at least 7 days before the event to discuss your options.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-up" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq5">
+            How do I stay updated on announcements?
+            <svg class="faq-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <polyline points="5 8 10 13 15 8"/>
+            </svg>
+          </button>
+          <div class="faq-answer" id="faq5" aria-hidden="true">
+            <p>Follow us on Instagram &#64;lagosinyankeeevent for all event updates, vendor announcements, and behind-the-scenes content. You can also join our mailing list using the contact form below.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       CONTACT / STAY CONNECTED
+  ===================================================== -->
+  <section class="contact" id="contact" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="contact-inner">
+
+        <div class="contact-info fade-up">
+          <p class="section-label">Stay Connected</p>
+          <h2 id="contact-heading" class="section-heading">
+            Be Part of<br><em>the Community</em>
+          </h2>
+          <p class="body-md">
+            Questions, vendor enquiries, sponsorship interest or just want to stay in the loop &mdash; reach out. We respond to every message.
+          </p>
+
+          <div class="contact-links">
+            <a class="contact-link" href="mailto:enquiries.enquiries.lagosinyankee@gmail.com" aria-label="Email Lagos In Yankee">
+              <div class="contact-link-icon">
+                <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+                  <rect x="2" y="4" width="16" height="13" rx="2"/>
+                  <polyline points="2 4 10 11 18 4"/>
+                </svg>
+              </div>
+              <div>
+                <span class="contact-link-label">Email Us</span>
+                <span class="contact-link-value">enquiries.lagosinyankee@gmail.com</span>
+              </div>
+            </a>
+
+            <a class="contact-link" href="https://instagram.com/lagosinyankeeevent" target="_blank" rel="noopener" aria-label="Follow Lagos In Yankee on Instagram">
+              <div class="contact-link-icon">
+                <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+                  <rect x="2" y="2" width="16" height="16" rx="4"/>
+                  <circle cx="10" cy="10" r="3.5"/>
+                  <circle cx="14.5" cy="5.5" r="0.5" fill="currentColor"/>
+                </svg>
+              </div>
+              <div>
+                <span class="contact-link-label">Instagram</span>
+                <span class="contact-link-value">&#64;lagosinyankeeevent</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form fade-up" aria-label="Contact and mailing list form" action="https://formspree.io/f/mdawqrka" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-name">Full Name</label>
+              <input type="text" id="cf-name" name="name" placeholder="Your name" autocomplete="name" required />
+            </div>
+            <div class="form-group">
+              <label for="cf-email">Email Address</label>
+              <input type="email" id="cf-email" name="email" placeholder="your@email.com" autocomplete="email" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cf-subject">I am interested in</label>
+            <select id="cf-subject" name="subject" required>
+              <option value="" disabled selected>Select an option</option>
+              <option value="attending">Attending the event</option>
+              <option value="vendor">Becoming a vendor</option>
+              <option value="sponsor">Sponsorship opportunities</option>
+              <option value="media">Media / press</option>
+              <option value="general">General enquiry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" rows="4" placeholder="Tell us more..."></textarea>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="cf-mailing" name="mailing" />
+            <label for="cf-mailing">Add me to the LIY community mailing list</label>
+          </div>
+          <button class="btn btn-gold form-submit" type="submit">
+            Send Message
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <line x1="3" y1="8" x2="13" y2="8"/>
+              <polyline points="9,4 13,8 9,12"/>
+            </svg>
+          </button>
+          <div class="form-success" id="formSuccess" aria-live="polite" hidden>
+            <div class="form-success-box">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+                <circle cx="24" cy="24" r="22"/>
+                <polyline points="14 24 21 31 34 17"/>
+              </svg>
+              <p>Your Message Has Been Sent</p>
+              <span>We&rsquo;ll be in touch shortly.</span>
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       FOOTER
+  ===================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner container">
+
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="lagos in yankee.jpeg" alt="Lagos In Yankee Logo" class="footer-logo-img" />
+        </div>
+        <p class="footer-tagline">
+          A cultural experience bringing Lagos energy to the diaspora.
+        </p>
+        <nav class="footer-social" aria-label="Social media">
+          <a href="https://instagram.com/lagosinyankeeevent" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+              <rect x="2" y="2" width="16" height="16" rx="4"/>
+              <circle cx="10" cy="10" r="3.5"/>
+              <circle cx="14.5" cy="5.5" r="0.5" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="https://tiktok.com/@lagosinyankee" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+              <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/>
+            </svg>
+          </a>
+          <a href="https://twitter.com/lagosinyankee" target="_blank" rel="noopener" aria-label="Twitter / X">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+              <path d="M3 3l14 14M17 3L3 17"/>
+            </svg>
+          </a>
+        </nav>
+      </div>
+
+      <nav class="footer-col" aria-label="Quick links">
+        <h4>Navigate</h4>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#vendors">Vendors</a>
+        <a href="#details">Event Details</a>
+        <a href="#gallery">Gallery</a>
+      </nav>
+
+      <nav class="footer-col" aria-label="Get involved links">
+        <h4>Get Involved</h4>
+        <a href="#tickets">Attend Free</a>
+        <a href="#vendor-cta">Become a Vendor</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#faq">FAQ</a>
+        <a href="mailto:enquiries.enquiries.lagosinyankee@gmail.com">enquiries.lagosinyankee@gmail.com</a>
+      </nav>
+
+    </div>
+    <!-- ── SPONSORS ─────────────────────────────────────────── -->
+    <div class="sponsors-bar container">
+      <p class="sponsors-label">Proudly Supported By</p>
+      <div class="sponsors-logos">
+        <div class="sponsor-slot">
+          <img src="footerlogo.jpg" alt="Sponsor 1" loading="lazy" />
+        </div>
+        <div class="sponsor-slot">
+          <img src="footerlogo2.jpg" alt="Sponsor 2" loading="lazy" />
+        </div>
+        <div class="sponsor-slot">
+          <img src="footerlogo3.png" alt="Sponsor 3" loading="lazy" />
+        </div>
+        <div class="sponsor-slot">
+          <img src="footerlogo4.png" alt="Sponsor 4" loading="lazy" />
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom container">
+      <p>&copy; 2026 Lagos In Yankee. All rights reserved.</p>
+      <span class="footer-mark">3.0 Edition &middot; Maryland, USA</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
