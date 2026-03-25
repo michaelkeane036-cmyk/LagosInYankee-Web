@@ -608,7 +608,17 @@ section[id], footer[id] {
 }
 
 @media (max-width: 600px) {
-  .hero-ribbon { display: none; }
+  /* Reposition ribbon inline below hero content instead of floating on the side */
+  .hero-ribbon {
+    position: static;
+    order: 2;
+    align-self: flex-start;
+    border-right: 1px solid rgba(245, 197, 24, 0.35);
+    border-radius: var(--radius-sm);
+    margin: 0 18px 32px;
+    padding: 10px 16px;
+  }
+  .hero-body { order: 1; }
   .hero-headline { font-size: clamp(54px, 16vw, 80px); }
 }
 
