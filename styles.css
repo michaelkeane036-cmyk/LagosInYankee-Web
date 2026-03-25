@@ -1243,8 +1243,18 @@ section[id], footer[id] {
   width: 100%;
   aspect-ratio: 4 / 3;
   overflow: hidden;
-  background: var(--brown-mid);
+  background: linear-gradient(90deg, var(--brown-mid) 25%, #2a2a2a 50%, var(--brown-mid) 75%);
+  background-size: 200% 100%;
+  animation: gallery-shimmer 1.4s ease-in-out infinite;
   display: block;
+}
+.gallery-slide-img:has(img[src]:not([src=""])) {
+  animation: none;
+  background: var(--brown-mid);
+}
+@keyframes gallery-shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
 }
 .gallery-slide-img img {
   width: 100%;
