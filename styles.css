@@ -877,17 +877,17 @@ section[id], footer[id] {
 .exp-card:hover::before { color: rgba(8, 8, 8, 0.08); }
 .exp-card:hover::after  { width: 100%; }
 
-/* Featured card — dark with gold accent */
+/* Featured card — matches white cards */
 .exp-card-featured {
-  background: var(--espresso);
-  border-top-color: rgba(245, 197, 24, 0.20);
-  border-right-color: rgba(245, 197, 24, 0.20);
-  border-bottom-color: rgba(245, 197, 24, 0.20);
+  background: var(--white);
+  border-top-color: rgba(8, 8, 8, 0.07);
+  border-right-color: rgba(8, 8, 8, 0.07);
+  border-bottom-color: rgba(8, 8, 8, 0.07);
   border-left-color: var(--gold);
 }
-.exp-card-featured::before { color: rgba(245, 197, 24, 0.07); }
-.exp-card-featured:hover { border-left-color: var(--gold-light); box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3); }
-.exp-card-featured:hover::before { color: rgba(245, 197, 24, 0.12); }
+.exp-card-featured::before { color: rgba(8, 8, 8, 0.05); }
+.exp-card-featured:hover { border-left-color: var(--terra); box-shadow: 0 16px 40px rgba(8, 8, 8, 0.10); }
+.exp-card-featured:hover::before { color: rgba(8, 8, 8, 0.08); }
 
 .exp-icon-wrap {
   width: 52px;
@@ -920,7 +920,7 @@ section[id], footer[id] {
   margin-bottom: 12px;
   line-height: 1.15;
 }
-.exp-card-featured .exp-title { color: var(--cream); }
+.exp-card-featured .exp-title { color: var(--espresso); }
 
 .exp-desc {
   font-size: 0.84rem;
@@ -928,7 +928,7 @@ section[id], footer[id] {
   color: #555555;
   line-height: 1.75;
 }
-.exp-card-featured .exp-desc { color: var(--cream-60); }
+.exp-card-featured .exp-desc { color: #555555; }
 
 /* Editorial corner mark accents */
 .exp-corner {
