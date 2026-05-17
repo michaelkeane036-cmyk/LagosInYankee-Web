@@ -201,13 +201,12 @@ section[id], footer[id] {
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 900;
-  height: var(--nav-h);
-  /* Subtle gradient keeps logo/links readable against any hero background
-     without looking like a solid bar */
-  background: linear-gradient(to bottom, rgba(8,8,8,0.55) 0%, rgba(8,8,8,0) 100%);
-  transition: background 0.4s ease, box-shadow 0.4s ease;
+  min-height: var(--nav-h);
+  background: transparent;
+  transition: background 0.4s ease, box-shadow 0.4s ease, backdrop-filter 0.4s ease;
 }
-.nav.scrolled {
+.nav.scrolled,
+.nav.menu-open {
   background: rgba(8, 8, 8, 0.96);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
@@ -218,7 +217,7 @@ section[id], footer[id] {
   max-width: var(--container);
   margin-inline: auto;
   padding-inline: 28px;
-  height: 100%;
+  height: var(--nav-h);
   display: flex;
   align-items: center;
   gap: 32px;
@@ -319,17 +318,35 @@ section[id], footer[id] {
 
 /* Mobile menu */
 .nav-mobile {
+  position: absolute;
+  top: var(--nav-h);
+  left: 0;
+  right: 0;
   display: none;
   flex-direction: column;
-  padding: 16px 28px 24px;
-  background: rgba(8, 8, 8, 0.98);
+  padding: 0 28px;
+  background: transparent;
   backdrop-filter: blur(16px);
-  border-top: 1px solid rgba(245, 197, 24, 0.18);
+  border-top: 0 solid transparent;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s var(--ease-out);
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    max-height 0.4s var(--ease-out),
+    padding 0.3s ease,
+    opacity 0.2s ease,
+    background 0.3s ease;
 }
-.nav-mobile.open { max-height: 500px; }
+.nav-mobile.open {
+  max-height: 500px;
+  padding: 16px 28px 24px;
+  background: rgba(8, 8, 8, 0.98);
+  border-top-width: 1px;
+  border-top-color: rgba(245, 197, 24, 0.18);
+  opacity: 1;
+  pointer-events: auto;
+}
 .nav-mobile-link {
   font-size: 1rem;
   font-weight: 500;
@@ -346,7 +363,26 @@ section[id], footer[id] {
 .nav-mobile-vendor { color: var(--cream-60); }
 
 @media (max-width: 900px) {
-  .nav-links, .nav-actions { display: none; }
+  .nav-actions { display: none; }
+  .nav-links {
+    display: flex;
+    flex: 1 1 auto;
+    min-width: 0;
+    margin-left: 0;
+    gap: 18px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    mask-image: linear-gradient(90deg, transparent 0, #000 14px, #000 calc(100% - 18px), transparent 100%);
+    -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 14px, #000 calc(100% - 18px), transparent 100%);
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a {
+    flex: 0 0 auto;
+    font-size: 0.74rem;
+  }
   .nav-hamburger { display: flex; }
   .nav-mobile { display: flex; }
 }
@@ -608,14 +644,14 @@ section[id], footer[id] {
 }
 
 @media (max-width: 600px) {
-  /* Reposition ribbon inline below hero content instead of floating on the side */
+  /* Keep the countdown on the video so it cannot land between hero and section. */
   .hero-ribbon {
-    position: static;
-    order: 2;
-    align-self: flex-start;
+    position: absolute;
+    top: calc(var(--nav-h) + 12px);
+    right: 0;
     border-right: 1px solid rgba(245, 197, 24, 0.35);
-    border-radius: var(--radius-sm);
-    margin: 0 18px 32px;
+    border-radius: var(--radius-sm) 0 0 var(--radius-sm);
+    margin: 0;
     padding: 10px 16px;
   }
   .hero-body { order: 1; }
@@ -2142,7 +2178,9 @@ section[id], footer[id] {
   :root { --section-v: 52px; }
 
   /* Nav */
-  .nav-inner { padding-inline: 18px; }
+  .nav-inner { padding-inline: 18px; gap: 18px; }
+  .nav-links { gap: 14px; }
+  .nav-links a { font-size: 0.68rem; }
 
   /* Hero */
   .hero-body { padding-top: calc(var(--nav-h) + 36px); padding-inline: 18px; padding-bottom: 60px; }
@@ -2195,6 +2233,9 @@ section[id], footer[id] {
   :root { --section-v: 44px; }
 
   .nav-logo-img { height: 34px; }
+  .nav-inner { gap: 12px; }
+  .nav-links { gap: 12px; }
+  .nav-links a { font-size: 0.64rem; }
 
   .hero-body { padding-top: calc(var(--nav-h) + 40px); padding-bottom: 48px; }
   .hero-headline { font-size: clamp(46px, 14vw, 64px); }

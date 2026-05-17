@@ -37,6 +37,7 @@
 
   // Mobile hamburger toggle
   function openMenu() {
+    nav.classList.add('menu-open');
     toggle.classList.add('open');
     toggle.setAttribute('aria-expanded', 'true');
     mobile.classList.add('open');
@@ -45,6 +46,7 @@
   }
 
   function closeMenu() {
+    nav.classList.remove('menu-open');
     toggle.classList.remove('open');
     toggle.setAttribute('aria-expanded', 'false');
     mobile.classList.remove('open');
