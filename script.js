@@ -6,8 +6,10 @@
      3. Scroll Reveal – IntersectionObserver fade-ups
      4. FAQ Accordion – accessible expand/collapse
      5. Contact Form – client-side handling + success state
-     6. Video Fallback – graceful no-video recovery
-     7. Stagger Delays – sibling card entrance timing
+     6. Event Sharing – WhatsApp and copy-link actions
+     7. Video Fallback – graceful no-video recovery
+     8. Gallery Slider – image carousel interactions
+     9. Active Nav Links – section tracking
    ================================================================ */
 
 'use strict';
@@ -76,9 +78,8 @@
 
 /* ── 2. COUNTDOWN ───────────────────────────────────────────── */
 (function initCountdown() {
-  // Target: May 30 2026, 12:00 PM Eastern Time
-  // Adjust timezone offset if needed (ET = UTC-5 standard, UTC-4 daylight)
-  const TARGET = new Date('2026-05-30T12:00:00-04:00');
+  // Target: May 30 2026, 10:00 AM Eastern Daylight Time (Maryland).
+  const TARGET = new Date('2026-05-30T10:00:00-04:00');
 
   const els = {
     days:  document.getElementById('cd-days'),
@@ -229,7 +230,47 @@
 })();
 
 
-/* ── 6. VIDEO FALLBACK ──────────────────────────────────────── */
+/* ── 6. EVENT SHARING ───────────────────────────────────────── */
+(function initEventSharing() {
+  const whatsapp = document.getElementById('whatsappShare');
+  const copyBtn  = document.getElementById('copyEventLink');
+  const feedback = document.getElementById('shareFeedback');
+  if (!whatsapp || !copyBtn || !feedback) return;
+
+  const shareText = "Join me at Lagos In Yankee '26 on May 30, 2026 in Maryland!";
+  const publicEventUrl = 'https://lagosinyankee.com/';
+  const whatsappUrl = () =>
+    'https://wa.me/?text=' + encodeURIComponent(shareText + ' ' + publicEventUrl);
+
+  whatsapp.href = whatsappUrl();
+  whatsapp.addEventListener('click', () => { whatsapp.href = whatsappUrl(); });
+
+  copyBtn.addEventListener('click', async () => {
+    try {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(publicEventUrl);
+      } else {
+        const input = document.createElement('textarea');
+        input.value = publicEventUrl;
+        input.setAttribute('readonly', '');
+        input.style.position = 'fixed';
+        input.style.opacity = '0';
+        document.body.appendChild(input);
+        input.select();
+        document.execCommand('copy');
+        input.remove();
+      }
+      feedback.textContent = 'Event link copied.';
+    } catch (err) {
+      feedback.textContent = 'Copy unavailable. Please share from your browser.';
+    }
+
+    setTimeout(() => { feedback.textContent = ''; }, 3500);
+  });
+})();
+
+
+/* ── 7. VIDEO FALLBACK ──────────────────────────────────────── */
 (function initVideoFallback() {
   const video = document.querySelector('.hero-video');
   if (!video) return;
@@ -252,7 +293,7 @@
 })();
 
 
-/* ── 7. GALLERY SLIDER ──────────────────────────────────────── */
+/* ── 8. GALLERY SLIDER ──────────────────────────────────────── */
 (function initGallerySlider() {
   const stage    = document.querySelector('.gallery-stage');
   const track    = document.getElementById('galleryTrack');
@@ -370,7 +411,7 @@
 })();
 
 
-/* ── 8. ACTIVE NAV LINKS ON SCROLL ─────────────────────────── */
+/* ── 9. ACTIVE NAV LINKS ON SCROLL ─────────────────────────── */
 (function initActiveSections() {
   const sections  = document.querySelectorAll('section[id]');
   const navLinks  = document.querySelectorAll('.nav-links a');
